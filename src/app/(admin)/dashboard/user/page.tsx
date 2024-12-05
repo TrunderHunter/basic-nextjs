@@ -1,30 +1,11 @@
-import React from "react";
+import UserTable from "@/components/admin/user.table";
 
 const ManageUserPage = () => {
-  return (
-    <div>
-      <h1>Manage User</h1>
-      <form>
+    return (
         <div>
-          <label>First Name</label>
-          <input type="text" />
+            <UserTable />
         </div>
-        <div>
-          <label>Last Name</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type="email" />
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" />
-        </div>
-        <button type="submit">Save</button>
-      </form>
-    </div>
-  );
-};
+    )
+}
 
 export default ManageUserPage;

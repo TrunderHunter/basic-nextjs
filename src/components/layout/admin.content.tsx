@@ -1,28 +1,28 @@
-"use client";
-import React from "react";
+'use client'
+
 import { Layout } from "antd";
 
-const { Content } = Layout;
-
 const AdminContent = ({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) => {
-  return (
-    <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
-      <div
-        style={{
-          padding: 24,
-          textAlign: "center",
-          background: "#fff",
-          borderRadius: 4,
-        }}
-      >
-        {children}
-      </div>
-    </Content>
-  );
-};
+    const { Content } = Layout;
+
+    return (
+        <Content>
+            <div
+                style={{
+                    padding: 24,
+                    minHeight: 'calc(100vh - 180px)',
+                    // background: "#ccc",
+                    // borderRadius: "#ccc",
+                }}
+            >
+                {children}
+            </div>
+        </Content>
+    )
+}
 
 export default AdminContent;

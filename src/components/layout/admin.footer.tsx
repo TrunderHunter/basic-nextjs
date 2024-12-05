@@ -1,14 +1,15 @@
 "use client";
-import React from "react";
 import { Layout } from "antd";
 
-const { Footer } = Layout;
-
 const AdminFooter = () => {
+  const { Footer } = Layout;
+
   return (
-    <Footer style={{ textAlign: "center" }}>
-      Ant Design ©{new Date().getFullYear()} Created by Ant UED
-    </Footer>
+    <>
+      <Footer style={{ textAlign: "center" }}>
+        Hỏi Dân IT ©{new Date().getFullYear()} Created by @Dreamer
+      </Footer>
+    </>
   );
 };
 
